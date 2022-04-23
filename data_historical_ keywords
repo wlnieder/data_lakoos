@@ -1,0 +1,90 @@
+import pandas as pd
+from pytrends.request import TrendReq
+import matplotlib.pyplot as plt
+import numpy as np
+
+pytrend = TrendReq()
+
+all_kw_crypto = ['crypto','ukraine war','bitcoin','binance','inflation']
+all_kw_exchange = ['binance','bitpanda','crypto.com','coinbase','kraken']
+all_kw_coin = ['bitcoin','ethereum','usdt','cardano','litecoin']
+all_kw_crisis = ['ukraine war','humanitarian crisis','dombass region','war','russian invasion']
+all_kw_economy = ['inflation','cost of living','recession','crisis','economic crisis']
+
+#trends crypto
+df_crypto = pytrend.get_historical_interest(all_kw_crypto, year_start=2022, month_start=1,
+                                                 day_start=1, hour_start=0, year_end=2022,
+                                                 month_end=4, day_end=22, hour_end=0,
+                                                 cat=0, geo='', gprop='', sleep=20)
+print(df_crypto)
+
+df_crypto.to_csv(r'/Users/philippgamperli/PycharmProjects/crypto.csv', index=True)
+
+#trends exchimport pandas as pd
+from pytrends.request import TrendReq
+
+
+
+pytrend = TrendReq()
+
+all_kw_crypto = ['blockchain','cryptocurrency','crypto','crypto mining','token']
+
+
+#trends crypto
+def crypto():
+    df_crypto = pytrend.get_historical_interest(all_kw_crypto, year_start=2022, month_start=1,
+                                                 day_start=1, hour_start=0, year_end=2022,
+                                                 month_end=4, day_end=22, hour_end=0,
+                                                 cat=0, geo='', gprop='', sleep=20)
+    print(df_crypto)
+
+    df_crypto.to_csv(r'/Users/philippgamperli/PycharmProjects/crypto.csv', index=True)
+
+#trends exchange
+def exchange():
+    all_kw_exchange = ['binance', 'bitpanda', 'crypto.com', 'coinbase', 'kraken']
+    df_exchange = pytrend.get_historical_interest(all_kw_exchange, year_start=2022, month_start=1,
+                                                 day_start=1, hour_start=0, year_end=2022,
+                                                 month_end=3, day_end=31, hour_end=0,
+                                                 cat=0, geo='', gprop='', sleep=20)
+    print(df_exchange)
+    df_exchange.to_csv(r'/Users/philippgamperli/PycharmProjects/exchange.csv', index=True)
+
+#trends coin
+def coin():
+    all_kw_coin = ['bitcoin', 'ethereum', 'usdt', 'cardano', 'litecoin']
+    df_coin = pytrend.get_historical_interest(all_kw_coin, year_start=2022, month_start=1,
+                                                 day_start=1, hour_start=0, year_end=2022,
+                                                 month_end=3, day_end=31, hour_end=0,
+                                                 cat=0, geo='', gprop='', sleep=20)
+    print(df_coin)
+    df_coin.to_csv(r'/Users/philippgamperli/PycharmProjects/coin.csv', index=True)
+
+#trends crisis
+def crisis():
+    all_kw_crisis = ['ukraine war', 'humanitarian crisis', 'dombass region', 'war', 'russian invasion']
+    df_crisis = pytrend.get_historical_interest(all_kw_crisis, year_start=2022, month_start=1,
+                                                 day_start=1, hour_start=0, year_end=2022,
+                                                 month_end=3, day_end=31, hour_end=0,
+                                                 cat=0, geo='', gprop='', sleep=20)
+    print(df_crisis)
+    df_crisis.to_csv(r'/Users/philippgamperli/PycharmProjects/crisis.csv', index=True)
+
+#trends economy
+def economy():
+    all_kw_economy = ['inflation', 'cost of living', 'recession', 'crisis', 'economic crisis']
+    df_economy = pytrend.get_historical_interest(all_kw_economy, year_start=2022, month_start=1,
+                                                 day_start=1, hour_start=0, year_end=2022,
+                                                 month_end=3, day_end=31, hour_end=0,
+                                                 cat=0, geo='', gprop='', sleep=20)
+    print(df_economy)
+    df_economy.to_csv(r'/Users/philippgamperli/PycharmProjects/economy.csv', index=True)
+
+crypto()
+exchange()
+coin()
+crisis()
+economy()
+
+
+
