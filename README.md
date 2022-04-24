@@ -23,7 +23,9 @@ In the input part of the code you can choose what kind of Tweets you want to col
 Furthermore, in the create_url function you can define what kind of data you want to collect from each Tweet. Find more information about what data you can collect here: https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet
 
 ## Google Trends Data
+With the Python code data_historical_ keywords it is possible to retrieve the search volume for certain keywords from Google Trends. Since the API has limitations regarding requests, a time delay is necessary. Because of this, the script takes a while to get the desired output.
 
+The code lambda_function_google_trends is intended to implement the Google Trends query for an AWS Lambda function. For this, the corresponding package pytrends must be loaded in a layer. This works best if you work with Python 3.8.
 
 ## Binance Data
 Hello, here I show a straight way to get marketprices from cryptocurrencies on binance with the binance-connector.
