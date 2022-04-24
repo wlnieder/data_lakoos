@@ -1,0 +1,95 @@
+import json
+import requests
+import pytrends
+from pytrends.request import TrendReq
+import time
+import boto3
+
+
+def lambda_handler(event, context):
+    pytrends = TrendReq()
+
+#crypto_keywords
+
+    all_kw_crypto = ['blockchain','crypto','cryptocurrency','crypto mining','token']
+    
+
+    pytrends.build_payload(all_kw_crypto,cat=0,timeframe='now 1-d',geo='',gprop='')
+
+    data = pytrends.interest_over_time()
+    
+    data.to_csv('/tmp/data_crypto.csv',index=False)
+    
+    s3 = boto3.client('s3')
+    s3.upload_file('/tmp/data_crypto.csv','pytrends','data_crypto.csv')
+    
+    time.sleep(20)
+    
+#crypto_exchange
+
+    all_kw_exchange = ['binance','bitpanda','crypto.com','coinbase','kraken']
+    
+
+    pytrends.build_payload(all_kw_exchange,cat=0,timeframe='now 1-d',geo='',gprop='')
+
+    data = pytrends.interest_over_time()
+    
+    data.to_csv('/tmp/data_exchange.csv',index=False)
+    
+    s3 = boto3.client('s3')
+    s3.upload_file('/tmp/data_exchange.csv','pytrends','data_exchange.csv')
+    
+    time.sleep(20)
+    
+#coin_keywords
+
+    all_kw_coin = ['bitcoin','ethereum','usdt','cardano','litecoin']
+    
+
+    pytrends.build_payload(all_kw_coin,cat=0,timeframe='now 1-d',geo='',gprop='')
+
+    data = pytrends.interest_over_time()
+    
+    data.to_csv('/tmp/data_coin.csv',index=False)
+    
+    s3 = boto3.client('s3')
+    s3.upload_file('/tmp/data_coin.csv','pytrends','data_coin.csv')
+    
+    time.sleep(20)
+    
+#economy_keywords
+
+    all_kw_economy = ['inflation','cost of living','recession','crisis','economic crisis']
+    
+
+    pytrends.build_payload(all_kw_economy,cat=0,timeframe='now 1-d',geo='',gprop='')
+
+    data = pytrends.interest_over_time()
+    
+    data.to_csv('/tmp/data_economy.csv',index=False)
+    
+    s3 = boto3.client('s3')
+    s3.upload_file('/tmp/data_economy.csv','pytrends','data_economy.csv')
+    
+    time.sleep(20)
+    
+#crisis_keywords
+
+    all_kw_crisis = ['ukraine war','humanitarian crisis','dombass region','war','russian invasion']
+    
+
+    pytrends.build_payload(all_kw_crisis,cat=0,timeframe='now 1-d',geo='',gprop='')
+
+    data = pytrends.interest_over_time()
+    
+    data.to_csv('/tmp/data_crisis.csv',index=False)
+    
+    s3 = boto3.client('s3')
+    s3.upload_file('/tmp/data_crisis.csv','pytrends','data_crisis.csv')
+    
+    time.sleep(20)
+    
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
