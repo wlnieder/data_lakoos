@@ -1,3 +1,7 @@
+The creators of this repository are collecting data to fill a data lake.
+The data will be used to gain insight into the behaviour of cryptocurrencies during a crisis (specifically the current war in Ukraine).
+
+This repository contains code used to retrieve data from three different sources: Twitter, Google Trends and Binance.
 
 Hello, here I show a straight way to get marketprices from cryptocurrencies on binance with the binance-connector.
 
