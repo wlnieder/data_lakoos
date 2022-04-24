@@ -3,7 +3,7 @@
 The creators of this repository are collecting data to fill a data lake for a university project.
 The data will be used to gain insight into the behavior of cryptocurrencies during a crisis - specifically the current war in Ukraine (April 2022).
 
-This repository contains code used to retrieve data from three different sources: Twitter, Google Trends and Binance.
+This repository contains code used to retrieve data from three different API's: Twitter, Google Trends and Binance.
 
 
 ## Twitter Data
