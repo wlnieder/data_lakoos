@@ -13,7 +13,7 @@ In the input section of the code "start_time" and "end_time" define the timefram
 
 To connect to the Twitter search API a bearer token is needed. You find your bearer token under "Keys and tokens"  on your Twitter Developer Dashboard. If you do not already have a Twitter Developer account, you will first have to create one to get your token. 
 
-When collecting Tweets, keep in mind, that there are maximum monthly Tweet caps (depending on access type) as well as a maximum number of requests per 15 minutes. Adapt the code according to the limitations of your account.
+When collecting Tweets, keep in mind, that there are monthly Tweet caps depending on your access type as well as a maximum number of requests per 15 minutes. Adapt the code according to the limitations of your account.
 Rate limits with essential access (Developer Account): https://developer.twitter.com/en/docs/twitter-api/rate-limits
 
 In the input part of the code you can choose what kind of Tweets you want to collect. In my case I wanted English Tweets that contain the word "sanctions", and I did not want retweets, replies or quotes.
