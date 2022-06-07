@@ -1,0 +1,24 @@
+$PSDefaultParameterValues = @{'*:Encoding' = 'utf8'}
+
+$InputFilename = Get-Content 'input_file_name.json'
+
+$OutputFilenamePattern = 'output_file_name_part_'
+$LineLimit = 800000
+$line = 0
+$i = 0
+$file = 0
+$start = 0
+
+while ($line -le $InputFilename.Length) {
+if ($i -eq $LineLimit -Or $line -eq $InputFilename.Length) {
+$file++
+$Filename = "$OutputFilenamePattern$file.json"
+$InputFilename[$start..($line-1)] | Out-File $Filename -Force
+$start = $line;
+$i = 0
+Write-Host "$Filename"
+}
+$i++;
+$line++
+}
+$
