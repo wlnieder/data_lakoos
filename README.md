@@ -20,9 +20,9 @@ Rate limits with essential access (Developer Account): https://developer.twitter
 
 In the input part of the code you can choose what kind of Tweets you want to collect. In my case I wanted English Tweets that contain the word "sanctions", and I did not want retweets, replies or quotes.
 
-Furthermore, in the create_url function you can define what kind of data you want to collect from each Tweet. Find more information about what data you can collect here: https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet
+Furthermore, in the create_url function you can define what kind of data you want to collect from each Tweet. Find more information about what data you can collect here: https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet  
 
-Additionally to the tweets collected daily, we hydrated tweets IDs from the following GitHub repository: https://github.com/echen102/ukraine-russia
+Additionally to the tweets collected daily, we hydrated tweets IDs from the following GitHub repository: https://github.com/echen102/ukraine-russia   
 Emily Chen and Emilio Ferrara collected these tweets in the context of the invasion of Ukraine on 22 February 2022 by Russia and the resulting, ongoing war. For further information, please check out their associated paper: [Tweets in Time of Conflict: A Public Dataset Tracking the Twitter Discourse on the War Between Ukraine and Russia](https://arxiv.org/abs/2203.07488)
 
 For the cleaning and processing of the data, the code was used in the following order: 
