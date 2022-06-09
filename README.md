@@ -25,7 +25,7 @@ Furthermore, in the create_url function you can define what kind of data you wan
 Additionally to the tweets collected daily, we hydrated tweet IDs from the following GitHub repository: https://github.com/echen102/ukraine-russia   
 Emily Chen and Emilio Ferrara collected these tweets in the context of the invasion of Ukraine on 22 February 2022 by Russia and the resulting, ongoing war. For further information, please check out their associated paper: [Tweets in Time of Conflict: A Public Dataset Tracking the Twitter Discourse on the War Between Ukraine and Russia](https://arxiv.org/abs/2203.07488)
 
-As we created counts of English tweets containing spefific keywords, the hydrated tweets had to be filtered and a count had to be created.
+As we created counts of English tweets containing specific keywords, the hydrated tweets had to be filtered and a count had to be created.
 For the cleaning and processing of the Twitter data, the code was used in the following order: 
 1. Twitter_file_splitting_PowerShell
 2. Twitter_Cleaning_And_Filtering
