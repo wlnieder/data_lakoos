@@ -26,10 +26,10 @@ Additionally to the tweets collected daily, we hydrated tweets IDs from the foll
 Emily Chen and Emilio Ferrara collected these tweets in the context of the invasion of Ukraine on 22 February 2022 by Russia and the resulting, ongoing war. For further information, please check out their associated paper: [Tweets in Time of Conflict: A Public Dataset Tracking the Twitter Discourse on the War Between Ukraine and Russia](https://arxiv.org/abs/2203.07488)
 
 For the cleaning and processing of the data, the code was used in the following order: 
-1. Twitter_file_splitting_PowerShell![image](https://user-images.githubusercontent.com/92974442/172848361-a490884e-58c7-4386-b518-6dc577f5377b.png)
-2. Twitter_Cleaning_And_Filtering![image](https://user-images.githubusercontent.com/92974442/172848468-7d709b27-9f93-409b-a32c-b1a6da64a559.png)
-3. Twitter_Merging_Keyword_Files_5_Parts![image](https://user-images.githubusercontent.com/92974442/172848538-be740108-446a-42d8-b637-bede07689299.png)
-4. Twitter_Merging_Total_And_Creating_Count![image](https://user-images.githubusercontent.com/92974442/172848587-79adecb7-46bd-4274-9185-c222b7e001f8.png)
+1. Twitter_file_splitting_PowerShell
+2. Twitter_Cleaning_And_Filtering
+3. Twitter_Merging_Keyword_Files_5_Parts
+4. Twitter_Merging_Total_And_Creating_Count
 
 
 ## Google Trends Data
