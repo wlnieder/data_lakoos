@@ -1,11 +1,12 @@
 # Cryptocurrencies during Crisis
 
 The creators of this repository are collecting data to fill a data lake for a university project.
-The data will be used to gain insight into the behavior of cryptocurrencies during a crisis - specifically the current war in Ukraine (April 2022).
+The data will be used to gain insight into the behavior of cryptocurrencies during a crisis - specifically the current war in Ukraine (June 2022).
 
 This repository contains code used to retrieve data from three different API's: Twitter, Google Trends and Binance.
+Additionally, there is code used to process the Twitter data. 
 Twitter and Google Data is used to map the course of the war, while from Binance the cryptocurrency rates are retrieved.
-The goal is to see, if cryptocurrencies show potential safe haven behaviour during this time of crisis.
+The goal is to see, if cryptocurrencies show potential safe haven characteristics during this time of crisis.
 
 
 ## Twitter Data
