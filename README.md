@@ -22,6 +22,12 @@ In the input part of the code you can choose what kind of Tweets you want to col
 
 Furthermore, in the create_url function you can define what kind of data you want to collect from each Tweet. Find more information about what data you can collect here: https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet
 
+Additionally to the tweets collected daily, we hydrated tweets IDs from the following GitHub repository: https://github.com/echen102/ukraine-russia
+Emily Chen and Emilio Ferrara collected these tweets in the context of the invasion of Ukraine on 22 February 2022 by Russia and the resulting, ongoing war. For further information, please check out their associated paper: [Tweets in Time of Conflict: A Public Dataset Tracking the Twitter Discourse on the War Between Ukraine and Russia](https://arxiv.org/abs/2203.07488)
+
+For the cleaning and processing of the data, the code was used in the following order: 
+
+
 ## Google Trends Data
 With the Python code data_historical_ keywords it is possible to retrieve the search volume for certain keywords from Google Trends. Since the API has limitations regarding requests, a time delay is necessary. Because of this, the script takes a while to get the desired output.
 
